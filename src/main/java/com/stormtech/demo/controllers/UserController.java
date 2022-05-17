@@ -2,7 +2,6 @@ package com.stormtech.demo.controllers;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,8 +16,8 @@ public class UserController {
 
 	private static final List<studentModel> students = Arrays.asList(
 			new studentModel(1, "Ntagungira Ali"),
-			new studentModel(2, "Ntagungira Ali"),
-			new studentModel(3, "Ntagungira Ali"));
+			new studentModel(2, "Salman Ali"),
+			new studentModel(3, "Isite Yves"));
 
 	@GetMapping(path = "{Id}")
 	public studentModel getStudent(@PathVariable("Id") Integer Id) {
